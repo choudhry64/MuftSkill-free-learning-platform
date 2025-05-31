@@ -1,0 +1,28 @@
+/project-root
+│
+├── index.html                  # Frontpage (landing page)
+/*
+   - Jahan se tech/non-tech category select karenge
+*/
+│
+├── tech/                      # Folder for all tech courses
+│   ├── index.html             # Tech main page (listing 10 tech courses)
+│   ├── course1.html           # Course 1 details page (videos, docs)
+│   ├── course2.html
+│   └── ... (total 10 courses)
+│
+├── non-tech/                  # Folder for all non-tech courses
+│   ├── index.html             # Non-tech main page (listing 10 non-tech courses)
+│   ├── course1.html           # Course 1 details page (videos, docs)
+│   ├── course2.html
+│   └── ... (total 10 courses)
+│
+├── assets/                    # Images, icons, fonts, PDFs etc.
+│   ├── css/
+│   │   └── style.css          # Your main CSS file
+│   ├── js/
+│   │   └── script.js          # Your main JavaScript file
+│   └── images/
+│       └── logo.png
+│
+└── README.md                  # (optional) Notes about project structure
