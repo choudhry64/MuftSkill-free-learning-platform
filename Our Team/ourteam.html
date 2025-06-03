@@ -1,19 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
-    <link rel="stylesheet" href="/Fronpage(landing page)/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team</title>
+  <link rel="stylesheet" href="/Fronpage(landing page)/style.css">
   <link rel="icon" type="image/png" href="/Fronpage(landing page)/img/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/Fronpage(landing page)/img/favicon.svg" />
   <link rel="shortcut icon" href="/Fronpage(landing page)/img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/Fronpage(landing page)/img/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="MuftSkill" />
   <link rel="manifest" href="/Fronpage(landing page)/img/site.webmanifest" />
+
+  <style>
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
+
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-section p,
+  .why-muftskill p,
+  .our-team p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .logo {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .button {
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: center;
+  }
+
+  .button a {
+    width: 90% !important;
+    display: block;
+  }
+
+  .contact-form {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
+}
+</style>
+
 </head>
+
 <body>
-     <header>
+  <header>
     <div class="logo">
       <div style="display: flex; align-items:center; gap:10px;">
         <a href="/" style="cursor: pointer;"><img src="/Fronpage(landing page)/logo.png" alt="MuftSkill" style="background: #ffffff;
@@ -25,35 +74,41 @@
 
       <ul>
         <li><a href="/">Home</a></li>
-        <li><a href="">More About Us</a></li>
-        <li><a href="">Our Team</a></li>
+        <li><a href="/Contact/index.html">Contact</a></li>
+        <li><a href="/Our Team/ourteam.html">Our Team</a></li>
         <li><a href="">Login</a></li>
         <li><a href="">Signup</a></li>
       </ul>
     </div>
   </header>
-  
-    <section class="our-team">
-  <img src="/Our Team/mypic1.png" alt="Bond's photo" class="profile-photo">
-  <img src="/Our Team/mypic2.png" alt="Bond's photo" class="profile-photo">
 
-  <h2>About Me</h2>
-  <p>Hi! I’m Sachin Chaudhary, currently in my 1st year of Bachelor of Computer Applications. I started MuftSkill because, honestly, I used to spend hours searching for good tech tutorials online, trying to figure out which ones were actually worth watching.</p>
+  <section class="our-team">
+    <img src="/Our Team/mypic1.png" alt="Bond's photo" class="profile-photo">
+    <img src="/Our Team/mypic2.png" alt="Bond's photo" class="profile-photo">
 
-  <p>MuftSkill is my way of making that hunt easier for everyone — a place where you can find quality learning content quickly and for free. It’s built to help learners like you save time and avoid frustration.</p>
+    <h2>About Me</h2>
+    <p>Hi! I’m Sachin Chaudhary, currently in my 1st year of Bachelor of Computer Applications. I started MuftSkill
+      because, honestly, I used to spend hours searching for good tech tutorials online, trying to figure out which ones
+      were actually worth watching.</p>
 
-  <p>Right now, it’s just me behind the scenes, but my goal is to keep improving MuftSkill and help you grow your skills with less hassle.</p>
+    <p>MuftSkill is my way of making that hunt easier for everyone — a place where you can find quality learning content
+      quickly and for free. It’s built to help learners like you save time and avoid frustration.</p>
+
+    <p>Right now, it’s just me behind the scenes, but my goal is to keep improving MuftSkill and help you grow your
+      skills with less hassle.</p>
 
   </section>
   <section>
-     <p><h3>Feel free to connect with me on.</h3>
+    <p>
+    <h3>Feel free to connect with me on.</h3>
     <a href="https://www.instagram.com/sachinjaiswal_0308" target="_blank" rel="noopener noreferrer">
-    <img src="/Our Team/instagram.png" alt="Instagram" style="width: 100px; height: 100px; object-fit: contain;"></a> 
+      <img src="/Our Team/instagram.png" alt="Instagram" style="width: 100px; height: 100px; object-fit: contain;"></a>
     <a href="https://www.linkedin.com/in/sachinchaudhary79" target="_blank" rel="noopener noreferrer">
-    <img src="/Our Team/linkedin.png" alt="Linkedin" style="width: 100px; height: 100px; object-fit: contain;">
+      <img src="/Our Team/linkedin.png" alt="Linkedin" style="width: 100px; height: 100px; object-fit: contain;">
     </a>
     </p>
   </section>
 
 </body>
+
 </html>

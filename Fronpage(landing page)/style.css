@@ -82,6 +82,7 @@ header {
     height: auto;
     border-radius: 10px;
     margin-bottom: 2rem;
+    width: 500px;
 }
 
 Button Group
@@ -110,9 +111,7 @@ Button Group
     background-color: #ed2f2f;
 }
 
-.hero-image{
-  background-color: white;
-}
+
 
 /* Course Images */
 .hero-section > div img {
@@ -369,4 +368,92 @@ Button Group
   max-width: 280px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form {
+    border-radius: 50px;
+    margin: 100px auto;
+    width: 600px;
+    max-width: 95%;
+    padding: 60px;
+    background: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-subtitle {
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.contact-input {
+    text-align: center;
+    width: 70%;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    
+}
+
+
+.contact-textarea{
+  text-align: center;
+    width: 80%;
+    height: 200px;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.contact-button{
+  text-align: center;
+    width: 20%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+/* for mobile responsse */
+@media (max-width: 480px) {
+    .button {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .button a {
+        display: block;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .logo ul {
+        gap: 10px;
+    }
+
+    .hero-section p {
+        padding: 0 10px;
+    }
 }

@@ -13,27 +13,85 @@
   <meta name="apple-mobile-web-app-title" content="MuftSkill" />
   <link rel="manifest" href="./Fronpage(landing page)/img/site.webmanifest" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <style>
+    @media only screen and (max-width: 480px) {
+      body {
+        padding: 0 10px;
+        overflow-x: hidden;
+      }
+
+      .hero-section h2 {
+        font-size: 1.5rem;
+      }
+
+      .hero-section p,
+      .why-muftskill p,
+      .our-team p {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+
+      .logo {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .button {
+        flex-direction: column !important;
+        width: 100% !important;
+        align-items: center;
+      }
+
+      .button a {
+        width: 90% !important;
+        display: block;
+      }
+
+      .contact-form {
+        width: 95%;
+        padding: 20px;
+      }
+
+      .contact-button {
+        width: 100%;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
   <header>
-    <div class="logo">
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #2c3e50;">
       <div style="display: flex; align-items:center; gap:10px;">
-        <img src="./Fronpage(landing page)/logo.png" alt="MuftSkill" style="background: #ffffff;
+        <img src="./Fronpage(landing page)/logo.png" alt="MuftSkill" style="background: #ffffff; width:60px; object-fit:contain;
       border-radius: 10px;">
-        <h1 class="Site name">MuftSkills | Free Courses
-
+        <h1 class="Site name d-flex gap-2 align-items-center ">MuftSkills <div class="d-none d-lg-flex ms-3" style="margin-left: 12px;">| Free Courses</div>
+        </h1>
       </div>
-      </h1>
+      <button class="navbar-toggler" style="background: #ffffff;" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="">More About Us</a></li>
-        <li><a href="/Our Team/ourteam.html">Our Team</a></li>
-        <li><a href="">Login</a></li>
-        <li><a href="">Signup</a></li>
-      </ul>
-    </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" style="color: #fff;" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: #fff;" href="/Contact/index.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: #fff;" href="/Our Team/ourteam.html">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: #fff;" href="">Login</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: #fff;" href="">Signup</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
   </header>
   <section class="hero-section">
     <h2>Welcome to MuftSkill</h2>
@@ -42,21 +100,24 @@
       content from YouTube and structured it into clean, easy-to-follow paths. Whether you're a beginner or brushing up
       your skills, MuftSkill helps you learn smarter — not harder. And yes, it’s 100% free.
     </p>
-    <div class="hero-image">
-      <img src="./Fronpage(landing page)/Frontimg1.jpg" alt="People chatting about tutorials">
+    <div class="hero-image" style="display: inline;">
+      <img src="./Fronpage(landing page)/student.png" alt="People chatting about tutorials">
+      <img src="/Fronpage(landing page)/Student2.png" alt="People chatting about tutorials">
     </div>
 
     <!-- make both button first and down their image -->
     <div class="techWrapper">
       <div class="tech-section" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
         data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center"><button class="button"><a
-            href="/Tech course/tech_course.html" style="color: white; text-decoration: none;">Tech
-            Courses </a></button> <img src="./Fronpage(landing page)/Tech.avif" alt="tech-icon"></div>
+            href="/Tech course/tech_course.html" style="color: white; text-decoration: none; ">Tech
+            Courses </a></button> <img src="./Fronpage(landing page)/Tech.avif" alt="tech-icon" width="500px"></div>
+      <br>
 
       <div class="non-tech-section" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
         data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center"><button class="button"><a
             href="/Non-Tech courses/nontech_course.html" style="color: white; text-decoration: none;">Non-Tech
-            Courses </a></button><img src="./Fronpage(landing page)/Non-tech.avif" alt="nonTech-icon"> </div>
+            Courses </a></button><img src="./Fronpage(landing page)/Non-tech.avif" alt="nonTech-icon" width="500px">
+      </div>
     </div>
   </section>
 
@@ -82,8 +143,15 @@
   <main></main>
   <footer style="text-align:center;">© 2025 MuftSkill. All rights reserved</footer>
 
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script>
     AOS.init({
       once: true,
