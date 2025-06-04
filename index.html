@@ -61,6 +61,64 @@
       }
     }
   </style>
+<style>
+/* sab style yahan copy kar de */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.popup-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.popup-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.popup-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.popup-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.popup-form button {
+  width: 100%;
+  padding: 0.6rem;
+  background: #4CAF50;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  color: #aaa;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #000;
+}
+</style>
 
 </head>
 
@@ -85,7 +143,7 @@
           <li class="nav-item"><a class="nav-link" style="color: #fff;" href="/">Home</a></li>
           <li class="nav-item"><a class="nav-link" style="color: #fff;" href="/Contact/index.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link" style="color: #fff;" href="/Our Team/ourteam.html">Our Team</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: #fff;" href="">Login</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: #fff;" href="javascript:void(0)" onclick="openLogin()">Login</a></li>
           <li class="nav-item"><a class="nav-link" style="color: #fff;" href="">Signup</a></li>
         </ul>
       </div>
@@ -139,8 +197,25 @@
       Start learning with a roadmap built <em>for learners, by learners</em>.
     </p>
   </section>
+  
+  <!-- Ye tere page ke end me hona chahiye, footer se pehle -->
+<div class="popup-overlay" id="loginPopup">
+  <div class="popup-form">
+    <span class="close-btn" onclick="closeLogin()">×</span>
+    <h2>Login</h2>
+    <form onsubmit="handleLogin(event)">
+      <label for="username">Username</label>
+      <input type="text" id="username" required />
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+      
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
 
-  <main></main>
+
   <footer style="text-align:center;">© 2025 MuftSkill. All rights reserved</footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -158,6 +233,26 @@
       mirror: true,
     });
   </script>
+
+  <script>
+  function openLogin() {
+    document.getElementById("loginPopup").style.display = "flex";
+  }
+
+  function closeLogin() {
+    document.getElementById("loginPopup").style.display = "none";
+  }
+
+  function handleLogin(event) {
+    event.preventDefault();
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+
+    alert("Login Successful! Welcome " + username);
+    closeLogin();
+  }
+</script>
+
 
 </body>
 
