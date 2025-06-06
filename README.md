@@ -13,6 +13,9 @@ It’s designed to cut through the noise, save time, and give learners a distrac
 As a student from Bihar, I saw many learners around me wasting hours trying to find good tech tutorials — jumping from one video to another, getting lost in unrelated content.  
 So I built **MuftSkill** to solve a real problem for real people — **a platform that simplifies learning and makes it accessible for everyone**.
 
+![image](https://github.com/user-attachments/assets/83b49dfc-a11c-40aa-8c61-882a90d9d8f9)
+
+
 ---
 
 ## 💡 Key Features
@@ -22,6 +25,11 @@ So I built **MuftSkill** to solve a real problem for real people — **a platfor
 - 🚫 No backend, no login — just click and learn
 - 🧠 Designed for a **distraction-free, structured learning experience**
 - 🔍 Curated tutorials organized by **tech domains and tools**
+
+
+
+https://github.com/user-attachments/assets/38ca06f5-f816-43df-896c-106a56a1bac6
+
 
 ---
 
